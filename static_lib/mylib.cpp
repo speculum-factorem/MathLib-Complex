@@ -6,7 +6,10 @@
 namespace MathLib {
     // Существующие функции
     Complex add(const Complex& a, const Complex& b) {
-        return { a.real + b.real, a.imag + b.imag };
+        // Более эффективная версия с локальными переменными
+        double real_sum = a.real + b.real;
+        double imag_sum = a.imag + b.imag;
+        return { real_sum, imag_sum };
     }
 
     Complex subtract(const Complex& a, const Complex& b) {
