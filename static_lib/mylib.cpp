@@ -4,6 +4,7 @@
 
 namespace MathLib {
     Complex add(const Complex& a, const Complex& b) {
+        std::cout << "Adding complex numbers..." << std::endl;
         return { a.real + b.real, a.imag + b.imag };
     }
 
